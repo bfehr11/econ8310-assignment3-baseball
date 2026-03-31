@@ -1,16 +1,5 @@
 # Assignment 3
 ## Econ 8310 - Business Forecasting
+## by Brady Fehr
 
-For homework assignment 3, you will work with our baseball pitch data (available in Canvas).
-
-- You must create a custom data loader as described in the first week of neural network lectures to load the baseball videos [2 points]
-- You must create a working and trained neural network (any network focused on the baseball pitch videos will do) using only pytorch [2 points]
-- You must store your weights and create an import script so that I can evaluate your model without training it [2 points]
-
-Submit your forked repository URL on Canvas! :) I'll be manually grading this assignment.
-
-Some checks you can make on your own:
-- Can your custom loader import a new video or set of videos?
-- Does your script train a neural network on the assigned data?
-- Did your script save your model?
-- Do you have separate code to import your model for use after training?
+For homework assignment 3, I have built a CNN classifier using a ResNet18 framework that takes a folder of .mov files and returns predictions for each frame of the video that indicate whether a baseball is present in the frame. In order to test it's accuracy, you can go to the eval.py file and change folder_path to a path to a folder that contains said .mov files and a corresponding CVAT format annotation file for each .mov file. The accuracy of the model on the frames is displayed as output. In testing, I was able to achieve approximately 99% accuracy.
